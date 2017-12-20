@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marble &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<title>TheBbs &mdash; HTML5 Bbs by FreeHTML5.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -41,7 +41,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/earlyaccess/mplus1p.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -69,40 +69,45 @@
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
+            
 			<h1 id="fh5co-logo"><a href="index.html">TheBBS</a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
+                
 				<ul>
-					<li class="fh5co-active"><a href="index.html">Home</a></li>
-                    <form class="navbar-form navbar-left" role="search">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-                </form>
-					<li><a href="bbsrecomend.html">ホットなヤツ</a></li>
-					<li><a href="portfolio.html">新規作成</a></li>
-					<li><a href="about.html">ログイン情報</a></li>
-					<li><a href="contact.html">ログアウト</a></li>
+                    <ul>
+                    <li><a href="login.html">ログイン</a></li>
+                    <li><a href="contact.html">ログアウト</a></li>
+                     <form class="navbar-form navbar-left" role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+					<li><a href="index.html">Top</a></li>
+					<li><a href="blog.html">掲示板一覧</a></li>
+					<li class="fh5co-active"><a href="portfolio.html">アカウント新規作成</a></li>
+					
 				</ul>
 			</nav>
 
 			<div class="fh5co-footer">
-				<p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
-				<ul>
+                <ul>
 					<li><a href="#"><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
 					<li><a href="#"><i class="icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-line">LINE</i></a></li>
+                    <li><a href="#">LINE</a></li>
 				</ul>
+				<p><small>Designed <span>&copy; 2016 Blend Free HTML5. All Rights Reserved.<span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
+				
 			</div>
-
+    
 		</aside>
-
+    </body>
 		<div id="fh5co-main">
 			<aside id="fh5co-hero" class="js-fullheight">
 				<div class="flexslider js-fullheight">
 					<ul class="slides">
-				   	<li style="background-image: url(images/img_bg_1.jpg);">
+				   	<li style="background-image: url(kejiban/oops.jpg);">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -110,7 +115,11 @@
 					   				<div class="slider-text-inner">
 					   					<h1>アツいやつな掲示板！</h1>
 					   					<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-											<p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+											<p>
+                                                <a href="#smoothplay" class="btn btn-primary btn-demo popup-vimeo"><i class="icon-monitor"></i>とりあえず何か観る</a>
+                                                <a class="btn btn-primary btn-demo popup-vimeo" href="bbsguide.html"> <i class="icon-monitor"></i>　いろいろ観る</a> 
+                                                <a class="btn btn-primary btn-learn">登録して参加したい！<i class="icon-arrow-right3"></i></a>
+                                            </p>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -123,27 +132,18 @@
 					   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
 					   				<div class="slider-text-inner">
 					   					<h1>読むだけならアカウントなくても見れちゃうZE!</h1>
-											<h2>なので気軽に記事が読める！</a></h2>
-											<p><a class="btn btn-primary btn-demo popup-vimeo" href="#"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
+											<h2>なので気軽に記事が読める！</h2>
+											<p>
+                                                <a href="#smoothplay" class="btn btn-primary btn-demo popup-vimeo"><i class="icon-monitor"></i>てきとうに観る</a>
+                                                <a class="btn btn-primary btn-demo popup-vimeo" href="bbsguide.html"> <i class="icon-monitor"></i>　どんなのか観る</a> 
+                                                <a class="btn btn-primary btn-learn">自分も参加したい！<i class="icon-arrow-right3"></i></a>
+                                            </p>
 					   				</div>
 					   			</div>
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(images/img_bg_3.jpg);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-8 col-md-offset-2 text-center js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<h1>Download our Free HTML5 Bootstrap Template</h1>
-											<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-											<p><a class="btn btn-primary btn-demo popup-vimeo" href="https://vimeo.com/channels/staffpicks/93951774"> <i class="icon-monitor"></i> Live Preview</a> <a class="btn btn-primary btn-learn">Learn More<i class="icon-arrow-right3"></i></a></p>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
+				   	
 				  	</ul>
 			  	</div>
 			</aside>
@@ -199,7 +199,7 @@
 				</div>
 			</div>
 			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Recent Blog</h2>
+				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" id="smoothplay">今が旬！</h2>
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-3 col-sm-6 col-padding animate-box" data-animate-effect="fadeInLeft">
 						<div class="blog-entry">
@@ -252,13 +252,17 @@
 				<div class="fh5co-narrow-content">
 					<div class="row">
 						<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-							<h1 class="fh5co-heading-colored">Get in touch</h1>
+							<h1 class="fh5co-heading-colored">よければシェアも！</h1>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<p class="fh5co-lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<p><a href="#" class="btn btn-primary">Learn More</a></p>
+							<div class="fh5co-footer">
+                                    <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                                    <li><a href="#"><i class="icon-twitter2"></i></a></li>
+                                    <li><a href="#"><i class="icon-instagram"></i></a></li>
+                                    <li><a href="#">LINE</a></li>
+                             
 						</div>
 						
 					</div>
