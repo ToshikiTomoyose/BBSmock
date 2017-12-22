@@ -64,98 +64,105 @@
 	</head>
 	<body>
 	<div id="fh5co-page">
-		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
 			<h1 id="fh5co-logo"><a href="index.html">TheBBS</a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
-                
 				<ul>
                     <ul>
-                    <li><a href="userguide.html">ログイン情報</a></li>
-                    <li><a href="logout.html">ログアウト</a></li>
-                     <form class="navbar-form navbar-left" role="search">
-                      <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                      </div>
-                      <button type="submit" class="btn btn-default">Submit</button>
+                        <form class="navbar-form navbar-left" role="search">
+                           <div class="form-group">
+                                <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </div>
                     </form>
+                    <li><a href="login.html">ログイン</a></li>
+                     
+                    <li></li>
 					<li><a href="index.html">Top</a></li>
 					<li><a href="bbsguide.html">掲示板一覧</a></li>
-					<li class="fh5co-active"><a href="usercreate.html">アカウント新規作成</a></li>
-					
+					<li class="fh5co-active"><a href="usercreate.html">アカウント新規登録</a></li>
+					<li><a href="logout.html">ログアウト</a></li>
 				</ul>
+                </ul>
 			</nav>
 
 			<div class="fh5co-footer">
-				<p><small>&copy; 2016 Blend Free HTML5. All Rights Reserved.</span> <span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
-				<ul>
+                <ul>
 					<li><a href="#"><i class="icon-facebook2"></i></a></li>
 					<li><a href="#"><i class="icon-twitter2"></i></a></li>
 					<li><a href="#"><i class="icon-instagram"></i></a></li>
-					<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                    <li><a href="#">LINE</a></li>
 				</ul>
+				<p><small>Designed <span>&copy; 2016 Blend Free HTML5. All Rights Reserved.<span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span></small></p>
+                </p>
 			</div>
-
+                </ul>
+            </nav>
 		</aside>
 
 		<div id="fh5co-main">
-			<div class="fh5co-narrow-content">
-				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><strong>アカウント新規作成</strong></h2>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-1.jpg);">
-							<div class="desc">
-								<h3>ログインID</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-2.jpg);">
-							<div class="desc">
-								<h3>名前</h3>
-								<span>Brading</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-3.jpg);">
-							<div class="desc">
-								<h3>パスワード</h3>
-								<span>Illustration</span>
-                                <p>パスワード（確認）</p>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
-						<a href="#" class="work image-popup" style="background-image: url(images/img-4.jpg);">
-							<div class="desc">
-								<h3>プロフィール画像</h3>
-								<span>Illustration</span>
-							</div>
-						</a>
-					</div>
-					
-		
-			<div class="fh5co-narrow-content">
-				<div class="row">
-					<div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
-						<h1 class="fh5co-heading-colored">アカウントの準備願います</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-						<p class="fh5co-lead">確定するか確定申告するか何もしないか</p>
-						<p><a href="#" class="btn btn-primary">確定</a></p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="fh5co-narrow-content">
+                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><strong>アカウント新規作成</strong></h2>
+                <div class="row row-bottom-padded-md">
+             <div class="col-lg-6">
+                <div class="well bs-component">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="inputLoginID" class="col-lg-2 control-label">ログインID</label>
+                        <div class="col-lg-10">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="ID入力して下さい">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword" class="col-lg-2 control-label">パスワード</label>
+                        <div class="col-lg-10">
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        </div>
+                      </div>
+                         <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">パスワード（確認）</label>
+                            <div class="col-lg-10">
+                              <input type="passwordc" class="form-control" id="inputPassword" placeholder="パスワード（確認）">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea" class="col-lg-2 control-label">ひとこと（任意）</label>
+                            <div class="col-lg-10">
+                              <textarea class="form-control" rows="3" id="textArea"></textarea>
+                              <span class="help-block">公序良俗に反しなければなんでも書いていいよ。</span>
+                            </div>
+                        </div>
+                      <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                          <button type="reset" class="btn btn-default">戻る</button>
+                          <button type="submit" class="btn btn-primary">確定</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
 
+                    <div class="fh5co-narrow-content-center">
+                        <div class="row">
+                            <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                                <h1 class="fh5co-heading-colored">何かに使うスペース</h1>
+                                    <div class="row">
+                                       <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                                          <p><a href="#" class="btn btn-primary" name="submit">確定</a></p>
+                                       </div>
+                                    </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
