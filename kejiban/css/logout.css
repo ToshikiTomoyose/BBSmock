@@ -15,7 +15,7 @@ p {
     width: 120%;
     height: 100%;
     display: none;
-    position: absolute
+    position: fixed
 }
  
 .close_overlay {
