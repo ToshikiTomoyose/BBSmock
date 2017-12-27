@@ -7,7 +7,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Marble &mdash; Free HTML5 Bootstrap Website Template by FreeHTML5.co</title>
+	<title>thebbs</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -43,8 +43,94 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <style>
-        form.action{
-        background-color: #99cc00
+        ◆CSS
+/* ContentsArea
+-------------------------- */
+#contents {
+    margin: 0 auto;
+    padding: 10px 0 50px 0;
+    width: 100%;
+}
+ 
+p {
+    padding: 10px 0;
+}
+
+#commentdelete,
+#deleteok,
+#report,
+#reportok,
+#response,
+#responseok{
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    display: none;
+    position: fixed
+}
+ 
+.close_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+    position: fixed;
+    background: #000;
+    opacity: 0.5;
+    z-index: 5;
+}
+ 
+.modal_window {
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    display: block;
+    background: #fff;
+    position: absolute;
+    z-index: 10;
+}
+ 
+.modal_window h2 {
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    text-indent: 15px;
+    background: #8b968d;
+}
+ 
+.modal_window p {
+    padding: 0 15px 15px 15px;
+    font-size: 12px;
+    line-height: 160%;
+    text-align: left;
+}
+ 
+ 
+/* CSS3 ModalWindow SET
+-------------------------- */
+@-webkit-keyframes modalFadeIn {
+    0% {opacity:0;display:block;}
+    100% {opacity:1;}
+}
+ 
+div#modal div:target {
+    -webkit-animation-name: modalFadeIn; 
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+    display:block;
+}
         </style>
 	
 	<!-- Animate.css -->
@@ -57,6 +143,7 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/logout.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -79,15 +166,17 @@
                                 <form class="navbar-form navbar-left" role="search">
                                        <div class="form-group">
                                             <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="検索">
+                                            <input type="text" class="form-control" placeholder="スレッド検索">
                                             </div>
                                         </div>
                                 </form>
-                                                                       <li></li>
-                                    <li class="fh5co-active"><a>Top</a></li>
+                                   
+                                    <li></li>
+                                    <li><a href="index.html">Top</a></li>
                                     <li><a href="bbsguide.html">掲示板一覧</a></li>
+                                    <li><a href="newbbs.html">新規スレッド</a></li>
                                     <li><a href="usercreate.html">アカウント新規登録</a></li>
-                                    <li><a href="logout.html">ログアウト</a></li>
+                                    <li><a href="#logout">ログアウト</a></li>
                             </ul>
                         </ul>
                     </nav>
@@ -100,9 +189,9 @@
                                 <li><a href="#">LINE</a></li>
                             </ul>
                             <p><small>Designed <span>&copy; 2016 Blend Free HTML5. All Rights Reserved.<span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span> <span>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></span></small></p>
-                            </p>
                     </div>
                 </aside>
+                
 
             <div id="fh5co-main">
 
@@ -116,51 +205,52 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
-                                        <div class="col-md-10">
+                                       
                                             <div class="form-group">
-                                                <p class="lead">ユーザーさん（仮）</p>
+                                                <p class="lead">コンちゃん <span>/</span><span> ID001</span></p>
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="画像">
+                                                <input type="file">
                                             </div>
-                                        </div>
-                                        <div>
+
                                             <div class="form-group">
                                                 <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <input type="submit" class="btn btn-primary btn-md" value="投稿">
                                             </div>
-                                        </div>
-
+                                        
                                     </div>
                                 </div>
 
                             </div>
                         </form>
                 </div>
-
+                
+                <div class="row-bottom-padded-md">
                     <div class="row-bottom-padded-md">
                         <div class="col-padding">
                             <div class="blog-entry">
                                 <div class="desc">
-                                    <h3>Bootstrapさわってるけど質問ある？</h3>
-                                    <span>by <small> / </small>ID 1 名無しさん <small> / </small><small> Web Design </small></span>
+                                    <h1 class="text-left">Bootstrapさわってるけど質問ある？</h1>
+                                    <span>by <small> / </small><small>ID 1</small><small>/</small>コンちゃん</span>
+                                    <span class="text-right"><a href="#commentdelete">削除</a> /<a href="#report"> 通報</a></span>
                                     <p>本文本文ほんぶんほんぶんほんぶんほんぶんほんぶんほんぶんほんぶんほんぶん</p>
-                                    <a><img src="images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                    <a><img src="images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by     FreeHTML5.co"></a>
+                                   <p class="text-right"><a href="#response">返信</a></p>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                  <div class="row-bottom-padded-md">
                         <div class="col-padding">
                             <div class="blog-entry">
                                 <div class="desc">
+                                    <span>by <small> / </small><small>ID 1</small><small>/</small> 名無しさん </span>
+                                    <span class="text-right"><a href="#commentdelete">削除</a> /<a href="#report"> 通報</a></span>
                                     <p>>>1 ちょｗｗｗｗ</p>
-                                     <span>by <small> / </small>ID 2 名無しさん <small> / </small><small> Web Design </small></span>
-                                    <p>本文本文ほんぶんほんぶんほんぶんほんぶんほんぶんほんぶんほんぶんほんぶん</p>
                                     <a><img src="images/img-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                    <p class="text-right"><a href="#response">返信</a></p>
                                 </div>
                             </div>
                         </div>
@@ -169,6 +259,114 @@
         </div>
         
 	</div>
+
+<section>
+<div id="contents">
+
+
+    <div id="modal">
+
+        <div id="commentdelete">
+            <a href="#" class="close_overlay posision: fixed;">×</a>
+            <div class="modal_window">
+                <h2>commentを削除</h2>
+                <p>コメントを削除します宜しいでしょうか。</p>
+                <p>よろしければ<br />
+                <a class="btn btn-warning" href="#deleteok">削除。</a> <br />
+                <p>そうでなければこのウィンドウを閉じる際は、ウィンドウ外をクリックするか、<br />
+                ×をクリック。</p>
+                <a href="#">【×】CLOSE</a>
+            </div><!--/.modal_window-->
+        </div><!--/#open01-->
+        
+        <div id="deleteok">
+            <a href="#" class="close_overlay posision: fixed;">×</a>
+            <div class="modal_window">
+                <h2>commentを削除完了。</h2>
+                <p>コメントを削除しました！</p>
+                <p>ウィンドウ外をクリックするか、<br />
+                ×をクリックで閉じます。</p>
+                <a href="#">【×】CLOSE</a>
+            </div><!--/.modal_window-->
+        </div>
+
+        
+        <div id="report">
+                    <a href="#" class="close_overlay posision: fixed;">×</a>
+                    <div class="modal_window">
+                        <h2>コメントのユーザを通報</h2>
+                        <p>ユーザ名「いいい」を通報します</p>
+                        <p>通報しますか<br />
+                        <a class="btn btn-warning" href="#reportok">通報。</a> <br />
+                        <p>そうでなければこのウィンドウを閉じる際は、ウィンドウ外をクリックするか、<br />
+                        ×をクリック。</p>
+                        <a href="#">【×】CLOSE</a>
+                    </div>
+        </div>
+        
+        <div id="reportok">
+                    <a href="#" class="close_overlay posision: fixed;">×</a>
+                    <div class="modal_window">
+                        <h2>通報完了。</h2>
+                        <p>ユーザ名「いいい」を通報しますた。</p>
+                        <p>ウィンドウ外をクリックするか、<br />
+                            ×をクリックで閉じます。</p>
+                        <a href="#">【×】CLOSE</a>
+                    </div><!--/.modal_window-->
+        </div>
+        
+        <div id="response">
+                    <a href="#" class="close_overlay posision: fixed;">×</a>
+                    <div class="modal_window">
+                        <h2><a>「</a><a>」</a>に返信</h2>
+                        <form action="toukou">
+                            <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                        <p>返信しますか<br />
+                            <!--ボタン機能はsubmit　-->
+                        <a class="btn btn-info" href="#responseok">返信</a> <br />
+                        <p>そうでなければこのウィンドウを閉じる際は、ウィンドウ外をクリックするか、<br />
+                        ×をクリック。</p>
+                        </form>
+                        <a href="#">【×】CLOSE</a>
+                        
+                    </div><!--/.modal_window-->
+        </div>
+        
+        <div id="responseok">
+                    <a href="#" class="close_overlay posision: fixed;">×</a>
+                    <div class="modal_window">
+                        <h2>返信完了。</h2>
+                        <p>返信しました。</p>
+                        <p>ウィンドウ外をクリックするか、<br />
+                            ×をクリックで閉じます。</p>
+                        <a href="#">【×】CLOSE</a>
+                    </div><!--/.modal_window-->
+        </div>
+        
+    </div><!--/#modal-->
+
+</div><!--/#contents-->
+            </section>
+    </div>
+        </div>
+</section>
+ <div id="contents">
+                <div id="modal">
+                    <div id="logout">
+                        <a href="#" class="close_overlay">×</a>
+                        <div class="modal_window">
+                            <h2>Logout</h2>
+                            <p>ログアウトしますか？</p>
+                            <p>よろしければ<br />
+                            <a class="btn btn-success" href="logout.html">削除。</a> <br />
+                            <p>そうでなければこのウィンドウを閉じる際は、ウィンドウ外をクリックするか、<br />
+                            ×をクリック。</p>
+                            <a href="#">【×】CLOSE</a>
+                        </div><!--/.modal_window-->
+                    </div><!--/#open01-->
+                </div>
+             </div>
+        
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -187,6 +385,7 @@
 	
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+
 
 	</body>
 </html>

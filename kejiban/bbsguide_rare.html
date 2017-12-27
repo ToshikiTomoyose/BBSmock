@@ -41,11 +41,7 @@
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-    <style>
-        form.action{
-        background-color: #99cc00
-        </style>
+	<link href="https://https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -69,7 +65,7 @@
 
 	</head>
 	<body>
-        <div id="fh5co-page">
+	<div id="fh5co-page">
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
                 <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
@@ -78,27 +74,26 @@
                         <ul>
                             <ul>
                                 <li><a href="userguide.html">おなまえ</a></li>
-                                
+                                <!--　管理者の場合 -->
+                                <li><a href="ownermenu.html">管理者</a></li>
                                 <form class="navbar-form navbar-left" role="search">
                                        <div class="form-group">
                                             <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="検索">
+                                            <input type="text" class="form-control" placeholder="スレッド検索">
                                             </div>
                                         </div>
                                 </form>
                                    
                                     <li></li>
                                     <li><a href="index.html">Top</a></li>
-                                    <li><a href="bbsguide.html">掲示板一覧</a></li>
-                                    <li class="fh5co-active"><a href="newbbs.html">新規スレッド</a></li>
+                                    <li class="fh5co-active"><a href="bbsguide.html">掲示板一覧</a></li>
+                                    <li><a href="newbbs.html">新規スレッド</a></li>
                                     <li><a href="usercreate.html">アカウント新規登録</a></li>
                                     <li><a href="#logout">ログアウト</a></li>
                             </ul>
                         </ul>
                     </nav>
 
-                    
-                    
                         <div class="fh5co-footer">
                             <ul>
                                 <li><a href="#"><i class="icon-facebook2"></i></a></li>
@@ -106,65 +101,82 @@
                                 <li><a href="#"><i class="icon-instagram"></i></a></li>
                                 <li><a href="#">LINE</a></li>
                             </ul>
-                            <p><small>Designed <span>&copy; 2016 Blend Free HTML5. All Rights Reserved.<span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span> <span>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></span></span></small></p>
+                            <p><small>Designed <span>&copy; 2016 Blend Free HTML5. All Rights Reserved.<span>Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> </span> <span>Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></span> <span>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></span></small></p>
                     </div>
                 </aside>
-            <div id="fh5co-main">
+        
+        
 
-                <div class="fh5co-narrow-content">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h2>新規投稿！</h2>
+		<div id="fh5co-main">
+            <div class="fh5co-narrow-content">
+                <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"><strong>掲示板</strong></h2>
+                <div class="bs-docs-section">
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="page-header">
+                        <form class="form-inline">
+                      <h1 id="tables" class="lead">掲示板一覧　　<small>カテゴリ【<strong>レア</strong>】</small></h1>
+                          
+                        
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                デフォルト <span class="caret"></span>
+                            </button>
+                              <ul class="dropdown-menu">
+                                <li><a href="bbsguide_rare.html">カテゴリ【レア】</a></li>
+                                <li><a href="bbsguide_medium.html">カテゴリ【ミディアム】</a></li>
+                                <li><a href="bbsguide_welldone.html">カテゴリ【ウェルダン】</a></li>
+                              </ul>
                         </div>
+                        </form>
                     </div>
-                        <form action="toukou">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        
-                                            <div class="form-group">
-                                                <p>ID001</p>
-                                                <p class="lead">ユーザーさん（仮）</p>
-                                            </div>
-                                            <div class="form-group">
-                                                <p>カテゴリ</p>
-                                              <label class="checkbox-inline">
-                                                <input type="checkbox" name="rare">レア
-                                                   </label>
-                                              <label class="checkbox-inline">
-                                                <input type="checkbox" name="medium">ミディアム
-                                              </label>
-                                                <label class="checkbox-inline">
-                                                <input type="checkbox" name="welldone">ウェルダン
-                                                  </label>
-                                               <p></p>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="タイトル">
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="file">
-                                            </div>
-                                        
-                                       
-                                            <div class="form-group">
-                                                <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message" name="Message"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-primary btn-md" value="投稿">
-                                            </div>
-                                       
 
-                                    </div>
-                                </div>
-
-                            </div>
+                        <div class="bs-component">
+                          <table class="table table-striped table-hover-responsive">
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th>タイトル</th>
+                                <th></th>
+                               
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="warning">
+                                <td><a href="bbsmain.html">6</a></td>
+                                <td><a href="bbsmain.html">タイトル</a></td>
+                                <td><a href="bbsmain.html">本文</a></td>
+                                <td></td>
+                              </tr>
+                              <tr class="warning">
+                                <td><a href="bbsmain.html">6</a></td>
+                                <td><a href="bbsmain.html">タイトル</a></td>
+                                <td><a href="bbsmain.html">本文</a></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
-                    </form>
+                  </div>
                 </div>
-
+                </div>
             </div>
+        <div class="fh5co-narrow-content">
+            <div class="row">
+                <div class="col-md-4 animate-box" data-animate-effect="fadeInLeft">
+                    <h1 class="fh5co-heading-colored">スレ建てたいなら</h1>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                        <p class="fh5co-lead">↓コチラ</p>
+                        <p><a href="newbbs.html" class="btn btn-primary">スレッド立ち上げ</a></p>
+                    </div>
+                </div>
         </div>
-
+    </div>
+        
         <div id="contents">
                 <div id="modal">
                     <div id="logout">
@@ -181,6 +193,7 @@
                     </div><!--/#open01-->
                 </div>
              </div>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -191,9 +204,6 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
 	
 	
 	<!-- MAIN JS -->
