@@ -35,7 +35,7 @@ p {
     position: fixed;
     background: #000;
     opacity: 0.5;
-    z-index: 5;
+    z-index: auto;
 }
  
 .modal_window {
@@ -48,7 +48,7 @@ p {
     display: block;
     background: #fff;
     position: absolute;
-    z-index: 10;
+    z-index: auto;
 }
  
 .modal_window h2 {

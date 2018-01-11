@@ -51,6 +51,8 @@
 	<link rel="stylesheet" href="css/flexslider.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+        
+    <link rel="stylesheet" href="css/logout.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -72,9 +74,9 @@
                                     <ul>
                                         <li><a href="login.html">ログイン</a></li>
                                         <!-- ログイン済み（一般ユーザ） -->
-                                        <li><a href="userguide.html">おなまえ</a></li>
+                                        <li><a href="userguide_up.html">おなまえ</a></li>
                                         <!--　管理者の場合 -->
-                                        <li><a href="ownermenu.html">管理者</a></li>
+                                        <li><a href="ownermenu_bbs.html">管理者</a></li>
                                         <!-- 新規登録リンクはログインしたら消える -->
                                         <li><a href="usercreate.html">アカウント新規登録</a></li>
                                         <form class="navbar-form navbar-left" role="search">
@@ -117,6 +119,24 @@
 			</div>
             <a href="index.html" class="btn btn-primary btn-block">TOPへもどる</a>
 		</div>
+        
+        <div id="contents">
+            <div id="modal">
+                <div id="logout">
+                    <a href="#" class="close_overlay">×</a>
+                    <div class="modal_window">
+                        <h2>Logout</h2>
+                        <p>ログアウトしますか？</p>
+                        <p>よろしければ<br />
+                        <a class="btn btn-success" href="logout.html">削除。</a> <br />
+                        <p>そうでなければこのウィンドウを閉じる際は、ウィンドウ外をクリックするか、<br />
+                        ×をクリック。</p>
+                        <a href="#">【×】CLOSE</a>
+                    </div><!--/.modal_window-->
+                </div><!--/#open01-->
+            </div>
+         </div>
+
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>

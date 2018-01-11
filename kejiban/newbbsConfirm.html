@@ -79,20 +79,20 @@
                                     <ul>
                                         <li><a href="login.html">ログイン</a></li>
                                         <!-- ログイン済み（一般ユーザ） -->
-                                        <li><a href="userguide.html">おなまえ</a></li>
+                                        <li><a href="userguide_up.html">おなまえ</a></li>
                                         <!--　管理者の場合 -->
-                                        <li><a href="ownermenu.html">管理者</a></li>
+                                        <li><a href="ownermenu_bbs.html">管理者</a></li>
                                          <!-- 新規登録リンクはログインしたら消える -->
                                         <li><a href="usercreate.html">アカウント新規登録</a></li>
                                         <form class="navbar-form navbar-left" role="search">
                                             <div class="form-group">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" placeholder="スレッド検索">
+                                                    <input type="text" class="form-control" placeholder="検索">
                                                 </div>
                                             </div>
                                         </form>
 
-                                        <li><a href="bbsguide.html">掲示板一覧</a></li>
+                                        <li><a href="bbsguide_medium.html">掲示板一覧</a></li>
                                         <li><a href="#logout">ログアウト</a></li>
                                     </ul>
                                 </ul>
@@ -120,7 +120,7 @@
                             <p><strong>以下の内容で投稿しても宜しい？</strong></p>
                         </div>
                     </div>
-                        <form action="toukou">
+                        <form action="toukou" align="center">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
@@ -141,7 +141,7 @@
                                                     <p>タイトルネーム</p>
                                                 </div>
                                                 
-                                                <div class="form-group">
+                                                <div class="form-group" align="center">
                                                     <p class="lead">画像</p>
                                                     <input type="file">
                                                 </div>
@@ -155,6 +155,9 @@
                                                 <p></p>
                                                 <div class="form-group">
                                                     <input type="submit" class="btn btn-normal btn-md" value="戻る">
+                                                    <a>&nbsp;</a>
+                                                    <a>&nbsp;</a>
+                                                    <a>&nbsp;</a>
                                                     <input type="submit" class="btn btn-primary btn-md" value="投稿">
                                                 </div>
                                        
@@ -167,8 +170,7 @@
                 </div>
 
             </div>
-        </div>
-
+        
         <div id="contents">
                 <div id="modal">
                     <div id="logout">

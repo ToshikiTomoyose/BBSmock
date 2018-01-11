@@ -55,8 +55,7 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/logout.css">
-    <style>
-        fh5co-narrow-content.{background-color: antiquewhite}</style>
+   
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -78,9 +77,9 @@
                                     <ul>
                                         <li><a href="login.html">ログイン</a></li>
                                         <!-- ログイン済み（一般ユーザ） -->
-                                        <li><a href="userguide.html">おなまえ</a></li>
+                                        <li><a href="userguide_up.html">おなまえ</a></li>
                                         <!--　管理者の場合 -->
-                                        <li><a href="ownermenu.html">管理者</a></li>
+                                        <li><a href="ownermenu_bbs.html">管理者</a></li>
                                         <!-- 新規登録リンクはログインしたら消える -->
                                         <li><a href="usercreate.html">アカウント新規登録</a></li>
                                         <form class="navbar-form navbar-left" role="search">
@@ -118,6 +117,7 @@
                         <div class="col-padding">
                             <div class="blog-entry">
                                 <div class="desc">
+                                    <a id="top"></a>
                                     <h1 class="text-left">Bootstrapさわってるけど質問ある？</h1>
                                     <span class="text-right"><a href="bbsdelete.html">このスレッドを削除</a></span>
                                     <span><a href="userguide_view.html"><img src="images/skytree.jpg" width="50px"></a><small>/</small><small>ID 1</small><small>/</small>コンちゃん</span>
@@ -145,35 +145,34 @@
                     </div>
             </div>
         </div>
-        
-        <div class="fh5co-narrow-content">
-            
-                        <form action="toukou">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                       
-                                            <div class="form-group">
-                                                <img src="images/skytree.jpg" width="100px"><br>
-                                                <p class="lead">コンちゃん <span>/</span><span> ID001</span></p>
-                                            </div>
-                                            <div class="form-group" id="res">
-                                                <input type="file">
-                                            </div>
+        <div align="center"><a href="#top">▲上へ戻る</a></div>
+            <div class="fh5co-narrow-content">
+                            <form action="toukou">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
 
-                                            <div class="form-group">
-                                                <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-primary btn-md" value="投稿">
-                                            </div>
-                                        
+                                                <div class="form-group">
+                                                    <img src="images/skytree.jpg" width="100px"><br>
+                                                    <p class="lead">コンちゃん <span>/</span><span> ID001</span></p>
+                                                </div>
+                                                <div class="form-group" id="res">
+                                                    <input type="file">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <textarea name="text" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" class="btn btn-primary btn-md" value="投稿">
+                                                </div>
+
+                                        </div>
                                     </div>
-                                </div>
 
-                            </div>
-                        </form>
-                </div>
+                                </div>
+                            </form>
+            </div>
 	</div>
         
         
